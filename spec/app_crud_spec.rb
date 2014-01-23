@@ -15,7 +15,7 @@ describe "App CRUD" do
 
   with_user_with_org
   with_new_space
-  with_time_limit
+  with_time_limit(1800)
 
   let(:app_content) { "#{SecureRandom.uuid}_#{Time.now.to_i}" }
   let(:language) { ENV["NYET_APP"] || "java" }
